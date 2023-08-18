@@ -1,0 +1,8 @@
+- hosts: server
+  become: yes
+  tasks:
+    - dnf:
+        name:
+          - emacs
+    - user:
+        name: nicholas
